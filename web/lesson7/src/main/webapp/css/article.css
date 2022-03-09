@@ -1,0 +1,77 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --light-text-color: #777;
+}
+
+.articles {
+    list-style-type: none;
+}
+.articles li {
+    margin-top: 1.5rem;
+}
+.articles li article .title {
+    color: var(--caption-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.articles li article .information {
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.articles li article .body {
+    border-left: 4px solid var(--border-color);
+    padding-left: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.articles li article .body p:last-child {
+    margin-bottom: 0;
+}
+
+.articles li article ul.attachment {
+    font-size: 0.85rem;
+    color: var(--light-text-color);
+    list-style: url("../img/paperclip-16x16.png") inside;
+    padding-left: 0;
+    margin: 0.56rem 0;
+}
+
+.articles li article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+.articles li article .footer .left {
+    display: flex;
+    align-items: center;
+}
+
+
+.articles li article .footer .left .positive-score {
+    color: green;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.articles li article .footer .right {
+    display: flex;
+    align-items: center;
+}
+
+.articles li article .footer img {
+    margin-right: 0.3rem;
+    margin-left: 0.5rem;
+}

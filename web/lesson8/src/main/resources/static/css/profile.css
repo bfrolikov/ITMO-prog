@@ -1,0 +1,26 @@
+.user-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+.user-profile .user-info {
+    margin-left: 0.5rem;
+}
+
+.user-profile .user-info h2 {
+    margin: 0.5rem 0 0 0;
+}
+
+.user-profile .user-info ul {
+    margin: 0.9rem 0 0 0;
+}
+
+.user-profile img {
+    width: 128px;
+    height: 128px;
+    align-self: center;
+}
