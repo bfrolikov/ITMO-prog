@@ -1,8 +1,29 @@
 # Учебные задания университета ИТМО
-## Программа для рекурсивного обхода директорий и подсчета хэшей файлов
-  1. Пока что не выложена из-за угрозы списывания кода
-## Домашние задания по курсу Web-программирования
-  1. [Ссылка на код](https://github.com/bfrolikov/ITMO-prog/tree/master/web)
+## Многопоточный Web Crawler
+  1. Потокобезопасный класс WebCrawler, рекурсивно обходящий сайты
+  2. Загрузка страниц и извлечение ссылок из уже загруженных страниц происходят параллельно
+  3. Параметры:
+      * `downloaders` — максимальное число одновременно загружаемых страниц
+      * `extractors` — максимальное число страниц, из которых одновременно извлекаются ссылки
+      * `perHost` — максимальное число страниц, одновременно загружаемых c одного хоста
+  4. [Подробное описание задачи и код](https://github.com/bfrolikov/ITMO-prog/tree/master/java-advanced/info/kgeorgiy/ja/frolikov/crawler)
+
+## Учебная копия вебсайта CodeForces
+  1. Backend: Java + Spring, Hibernate
+  2. Frontend: Vue.js
+  1. [Ссылка на код](https://github.com/bfrolikov/ITMO-prog/tree/master/web/lesson11)
+
+## Seam Carving
+1. Aлгоритм изменения размера изображения с учетом содержания, реализованный на C++
+2. [Подробное описание задачи и код](https://github.com/bfrolikov/ITMO-prog/tree/master/cpp/seam-carving)
+
+## 2-d дерево
+1. Структура данных для упорядочивания точек в двумерном пространстве, реализованная на C++
+2. Поддерживаемые запросы: 
+    * Из `N` точек необходимо выбрать все точки, которые попали внутрь данного прямоугольника
+    * Найти `k` ближайших к заданной точке `x` точек на плоскости 
+3. [Подробное описание задачи и код](https://github.com/bfrolikov/ITMO-prog/tree/master/cpp/2d-tree)
+
 ## Программа для разбора и вычисления выражений трёх переменных
 1. Имеет интерфейс коммандной строки, принимает следующие параметры:<br>
     * Тип, в котором будут производится вычисления
@@ -17,6 +38,7 @@
 7. [Ссылка на класс-вычислитель](https://github.com/bfrolikov/ITMO-prog/blob/master/prog-paradigms/expression/generic/GenericTabulator.java)
 8. [Реализация на JavaScript](https://github.com/bfrolikov/ITMO-prog/blob/master/prog-paradigms/javascript/objectExpression.js), разбирающая выражения только в обратной польской записи
 9. [Реализация на Clojure](https://github.com/bfrolikov/ITMO-prog/blob/master/prog-paradigms/clojure/expression.clj), разбирающая выражения, записанные в стандартной для Clojure форме
+
 ## Максимально расширяемая реализация игры m,n,k
 1. Реализация [игры m,n,k](https://en.wikipedia.org/wiki/M,n,k-game)
 2. Программа построена с соблюдением [SOLID](https://ru.wikipedia.org/wiki/SOLID_(%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5))
@@ -25,9 +47,7 @@
 5. Поддерживает доску в форме ромба (квадрата, повернутого на 45°)
 6. Обрабатывает ошибки ввода пользователя
 7. [Ссылка на код](https://github.com/bfrolikov/ITMO-prog/tree/master/prog-intro/game)
-## Seam Carving
-1. Aлгоритм изменения размера изображения с учетом содержания, реализованный на C++
-2. [Подробное описание задачи и код](https://github.com/bfrolikov/ITMO-prog/tree/master/cpp/seam-carving)
+
 ## Быстрая версия класса Scanner из стандартной библиотеки Java
 1. Быстрый аналог класса Scanner на основе Reader
 2. Поддерживает десятичные и шестнадцатеричные числа
